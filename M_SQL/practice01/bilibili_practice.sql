@@ -1,0 +1,10 @@
+select database ();
+show databases;
+drop database qq;
+SHOW DATABASES LIKE 's%';
+SHOW CREATE DATABASE company;
+SHOW DATABASES;
+DROP DATABASE IF EXISTS qq;
+SELECT DATABASE ();
+use school;
+USE company;
