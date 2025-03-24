@@ -11,7 +11,14 @@ class UserIn(BaseModel):
     email:EmailStr
     full_name: str | None =None
 
-@app08.get("/user")
+# 响应内容应该与输入内容区分开
+class UserOut(BaseModel):
+    username:str
+    email:EmailStr
+    full_name: str | None =None
+
+@app08.post("/user02", response_model=UserOut)
 async def get_user(user:UserIn):
     # 存到数据库
     return user
+
