@@ -1,1 +1,12 @@
 .DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*.class
+.env
+.venv
+venv/
+ENV/
+.mypy_cache/
+.pytest_cache/
+*.pyc
