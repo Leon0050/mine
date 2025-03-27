@@ -1,0 +1,150 @@
+Background  背景
+Our legal teams have raised concerns about people abusing this script to steal our confidential data! We have now password protected all files which contain confidential data.
+我们的法律团队对有人滥用此脚本窃取我们的机密数据表示担忧！我们现在已对所有包含机密数据的文件进行密码保护。
+
+VALID FILENAMES AND DEPARTMENTS:
+filea fileb filec filed filea filec
+dep1  dep1  dep2  dep2  dep3  dep3
+      pass1       pass2
+
+有效的文件名和部门：
+文件 file 文件 file 文件 file 文件
+dep1 dep1 dep2 dep2 dep3 dep3
+通行证 1 通行证 2
+Please modify your previous script to ask for a password when a user tries to access a file with confidential content. The user has three (3) attempts to enter the password for the file, after which they should be returned to the initial prompt.
+请修改您之前的脚本，以便在用户尝试访问包含机密内容时要求输入密码。用户有三 （3） 次尝试输入文件的密码，之后应返回到初始提示符。
+
+Description  描述
+Your program should proceed as follows:
+您的程序应按如下方式进行：
+
+When your program starts it should display the text "CHECK FILENAMES".
+当您的程序启动时，它应该显示文本 “CHECK FILENAMES”。
+
+Ask the user to input a department name.
+请用户输入组织名称。
+
+While the department name input is not "quit".
+当部门名称输入不是 “quit” 时。
+
+If the user input a correct department name, ask the user to input a filename.
+如果用户输入了正确的部门名称，请要求用户输入文件名。
+
+Once the user inputs a non-empty filename.
+用户输入非空文件名后。
+
+If a password exists for the entered file, ask the user for a password.
+如果输入的文件存在密码，请向用户询问密码。
+
+While the user has not given the incorrect password.
+当用户未提供错误的密码时。
+
+If the user has made three (3) password attempts, reset and return to asking for a department.
+如果用户已尝试使用三 （3） 次密码，请重置并返回请求部门。
+
+If no password exists for the entered file or once the user has given the correct password.
+如果输入的文件不存在密码，或者用户提供了正确的密码。
+
+Display to the user if the file name is or is not valid for the given department.
+向用户显示文件名是否对给定部门有效。
+
+Allow the program to exit with the message "GOODBYE".
+允许程序退出并显示消息 “GOODBYE”。
+
+Examples  例子
+Example 1:  示例 1：
+
+CHECK FILENAMES
+Input a department (or quit to exit): dep1
+Input a filename: filea
+filea - is a valid filename for - dep1
+Input a department (or quit to exit): quit
+GOODBYE
+检查文件名
+输入部门（或退出退出）：dep1
+输入文件名：filea
+filea - 是 - dep1 的有效文件名
+输入部门（或退出以退出）： 退出
+再见
+Example 2:  示例 2：
+
+CHECK FILENAMES
+Input a department (or quit to exit): dep2
+Input a filename: filed
+3 password attempts remain.
+Input password: notthepassword
+2 password attempts remain.
+Input password: pass2
+filed - is a valid filename for - dep2
+Input a department (or quit to exit): quit
+GOODBYE
+检查文件名
+输入部门（或退出退出）：dep2
+输入文件名：filed
+仍有 3 次密码尝试。
+输入密码：notthepassword
+仍有 2 次密码尝试。
+输入密码：pass2
+filed - 是 - dep2 的有效文件名
+输入部门（或退出以退出）： 退出
+再见
+
+Example 3:  示例 3：
+
+CHECK FILENAMES
+Input a department (or quit to exit): dep1
+Input a filename: fileb
+3 password attempts remain.
+Input password: notthepassword
+2 password attempts remain.
+Input password:
+1 password attempts remain.
+Input password: wrongpass
+Input a department (or quit to exit): quit
+GOODBYE
+检查文件名
+输入部门（或退出退出）：dep1
+输入文件名：fileb
+仍有 3 次密码尝试。
+输入密码：notthepassword
+仍有 2 次密码尝试。
+输入密码：
+仍有 1 次密码尝试。
+输入密码：wrongpass
+输入部门（或退出以退出）： 退出
+再见
+
+Example 4:  示例 4：
+
+CHECK FILENAMES
+Input a department (or quit to exit): dep1
+Input a filename: fileb
+3 password attempts remain.
+Input password: notthepassword
+2 password attempts remain.
+Input password:
+1 password attempts remain.
+Input password: wrongpass
+Input a department (or quit to exit): dep2
+Input a filename: filed
+3 password attempts remain.
+Input password: pass2
+filed - is a valid filename for - dep2
+Input a department (or quit to exit): quit
+GOODBYE
+检查文件名
+输入部门（或退出退出）：dep1
+输入文件名：fileb
+仍有 3 次密码尝试。
+输入密码：notthepassword
+仍有 2 次密码尝试。
+输入密码：
+仍有 1 次密码尝试。
+输入密码：wrongpass
+输入部门（或退出退出）：dep2
+输入文件名：filed
+仍有 3 次密码尝试。
+输入密码：pass2
+filed - 是 - dep2 的有效文件名
+输入部门（或退出以退出）： 退出
+再见
