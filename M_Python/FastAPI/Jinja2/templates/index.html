@@ -20,6 +20,27 @@
 <p>{{user.gender}}</p>
 <p> {{Pi|round(3)}}</p>
 <p> {{Hello|title}}</p>
+<ul>
+    {% for cate in cates %}
+    <li> {{cate}}</li>
+    {% endfor %}
+</ul>
+
+
+<p> 影视区</p>
+{% if age > 18 %}
+<ul>
+    <li> 日韩</li>
+    <li> 欧美</li>
+    <li> 国产</li>
+</ul>
+{% else %}
+<li> 黑猫警长 </li>
+<li> 熊出没 </li>
+<li> 蓝猫三千问 </li>
+{% endif %}
+
+
 
 </body>
 </html>

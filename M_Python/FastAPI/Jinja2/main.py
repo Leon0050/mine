@@ -11,10 +11,11 @@ async def index(request: Request):
     # name = 'LInc'.upper()
     pi = 3.1415926
     name = 'LInc'
-    age = 32
+    age = 18.1
     book = ["a", 'b', "c"]
     user = {"name":"Linc","age":25, "gender": "Man"}
     hello = "hello world"
+    categroies = ["Python", "Java", "C++"]
 
     # return {"name":name}
     return templates.TemplateResponse("index.html",# 模版文件
@@ -25,7 +26,9 @@ async def index(request: Request):
                                           "books":book,
                                           "user" : user,
                                           "Pi": pi,
-                                          "Hello": hello
+                                          "Hello": hello,
+                                            "cates": categroies
+
 
                                       }, # context上下文对象,一个字典
                                       )
