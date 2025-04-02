@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2</title>
+</head>
+<body>
+<h>Hello, 你知道我的名字是{{name|upper}}？！</h>
+<p>Hello, my age is {{age| replace(32, 36.9)}} </p>
+<p>Hello , my favourite books are {{books}}</p>
+<p>my favourite book is 'hehbc{{ books[0] }}'</p>
+
+<ul>
+    <li> {{ books.0 }}</li>
+    <li> {{ books.1 }}</li>
+</ul>
+<p> {{user}}  </p>
+<p>{{user.name}}</p>
+<p>{{user.age}}</p>
+<p>{{user.gender}}</p>
+<p> {{Pi|round(3)}}</p>
+<p> {{Hello|title}}</p>
+
+</body>
+</html>
